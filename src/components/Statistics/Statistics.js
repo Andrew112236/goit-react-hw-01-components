@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 function generateRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -29,3 +30,8 @@ export default function Statistics({ title, stats }) {
     </section>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.number.isRequired,
+};

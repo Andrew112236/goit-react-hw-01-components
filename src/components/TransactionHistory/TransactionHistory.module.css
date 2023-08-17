@@ -1,0 +1,35 @@
+.transaction_history {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.table_columns {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 15px;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.table_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 15px;
+}
+
+.table_data {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  gap: 40px;
+}
+
+.table_data:last-child {
+  border-right: none;
+}

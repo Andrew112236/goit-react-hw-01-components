@@ -3,17 +3,17 @@ import style from '../TransactionHistory/TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <table className={style.transaction_history}>
       <thead>
-        <tr>
+        <tr className={style.table_columns}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={style.table_body}>
         {items.map(transaction => (
-          <tr key={transaction.id}>
+          <tr className={style.table_data} key={transaction.id}>
             <td>{transaction.type}</td>
             <td>{transaction.amount}</td>
             <td>{transaction.currency}</td>
